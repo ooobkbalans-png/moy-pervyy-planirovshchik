@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light">
+    <meta name="description" content="Локальный планировщик отчетности бухгалтерской компании Финалогика.">
+    <title>Финалогика · Планировщик отчетности</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+    <div id="app" aria-busy="true"></div>
+    <dialog id="detail-dialog" aria-labelledby="dialog-title">
+      <div class="dialog-head"><h2 id="dialog-title"></h2><button class="icon-button" id="dialog-close" aria-label="Закрыть окно">×</button></div>
+      <div id="dialog-content"></div>
+    </dialog>
+    <div id="announcement" class="sr-only" role="status" aria-live="polite"></div>
+    <noscript><main class="fatal"><h1>Включите JavaScript</h1><p>Для работы локального планировщика необходим JavaScript в браузере.</p></main></noscript>
+  </body>
+</html>
